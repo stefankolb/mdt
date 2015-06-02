@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>MobileDevelopmentTools</title>
+
+    <!-- STYLES -->
+    <% filesStyle.forEach(function (file) { %><link rel="stylesheet" type="text/css" href="<%= file %>" />
+    <% }); %>
+    <!-- SCRIPTS -->
+    <% filesScript.forEach(function (file) { %><script type="text/javascript" src="<%= file %>"></script>
+    <% }); %>
+  </head>
+  <body>
+
+  </body>
+
+</html>

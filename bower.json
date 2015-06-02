@@ -1,0 +1,11 @@
+{
+  "name": "MobileDevelopmentTools",
+  "version": "0.0.0",
+  "authors": [
+    "Stefan Kolb <dev@stefankolb.de>"
+  ],
+  "dependencies": {
+
+  },
+  "license": "MIT"
+}
