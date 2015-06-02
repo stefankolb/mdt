@@ -32,6 +32,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-postcss');
 
@@ -87,6 +88,10 @@ module.exports = function(grunt) {
 
       compile: [
         '<%= dir.compile %>'
+      ],
+      
+      temp: [
+        '<%= dir.temp %>'
       ]
 
     },
@@ -133,7 +138,8 @@ module.exports = function(grunt) {
 
       compile: {
         src: [
-          '<%= files_internal.scripts %>'
+          '<%= files_internal.scripts %>',
+          '<%= html2js.compile.dest %>'
         ],
         dest: '<%= dir.compile %>/' + _pathAssetsScripts + '/<%= pkg.name %>-' + _appVersion + '.js'
       }
@@ -201,9 +207,11 @@ module.exports = function(grunt) {
 
       html: {
         files: [
-          'src/index.html'
+          'src/index.html',
+          'src/partials/**/*.html'
         ],
         tasks: [
+          'html2js:develop',
           'index:develop'
         ]
       },
@@ -229,6 +237,31 @@ module.exports = function(grunt) {
         ]
       }
 
+    },
+    
+    
+    // -------------------------------------------------------------------------
+    // HTML TEMPLATES
+    // -------------------------------------------------------------------------
+    
+    html2js: {
+      
+      options: {
+        module: 'templates',
+        useStrict: true,
+        singleModule: true,
+      },
+      
+      develop: {
+        src: '<%= files_internal.templates %>',
+        dest: '<%= dir.develop %>/' + _pathAssetsScripts + '/templates.js'
+      },
+      
+      compile: {
+        src: '<%= files_internal.templates %>',
+        dest: '<%= dir.temp %>/' + _pathAssetsScripts + '/templates.js'
+      }
+      
     },
 
 
@@ -264,7 +297,8 @@ module.exports = function(grunt) {
           ],
           scripts: [
             '<%= files_external.scripts %>',
-            '<%= files_internal.scripts %>'
+            '<%= files_internal.scripts %>',
+            '<%= html2js.develop.dest %>'
           ]
         }
       },
@@ -386,7 +420,8 @@ module.exports = function(grunt) {
       compile: {
         files: {
           '<%= dir.compile %>/assets/scripts/<%= pkg.name %>-<%= appVersion %>.min.js': [
-            '<%= files_internal.scripts %>'
+            '<%= files_internal.scripts %>',
+            '<%= html2js.compile.dest %>'
           ]
         }
       }
@@ -421,18 +456,22 @@ module.exports = function(grunt) {
     'clean:develop',
     'compass:develop',
     'postcss:develop',
+    'html2js:develop',
     'copy:develop',
-    'index:develop'
+    'index:develop',
+    'clean:temp'
   ]);
 
   grunt.registerTask('compile', [
     'clean:compile',
     'compass:compile',
     'postcss:compile',
+    'html2js:compile',
     'copy:compile',
     'concat:compile',
     'uglify:compile',
-    'index:compile'
+    'index:compile',
+    'clean:temp'
   ]);
 
   grunt.registerTask('deploy', [ ]);

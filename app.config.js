@@ -21,7 +21,10 @@ module.exports = {
     compile: 'build/compile',
 
     // The directory where the application is build for deployment
-    deploy: 'build/deploy'
+    deploy: 'build/deploy',
+    
+    // The directory used for temporary storing of build files
+    temp: 'build/temp'
 
   },
 
@@ -38,6 +41,10 @@ module.exports = {
 
     assets: [
 
+    ],
+    
+    templates: [
+      'src/partials/*.tpl.html'
     ],
 
     sass: {

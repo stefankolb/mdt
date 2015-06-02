@@ -8,7 +8,7 @@
  
 'use strict';
 
-var app = angular.module('mdt', [ 'ui.router' ]);
+var app = angular.module('mdt', [ 'ui.router', 'templates' ]);
 
 app.config([ '$stateProvider', '$locationProvider', '$urlRouterProvider',
   function($stateProvider, $locationProvider, $urlRouterProvider) {
