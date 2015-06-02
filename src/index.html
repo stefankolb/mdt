@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mdt">
   <head>
     <meta charset="UTF-8" />
 
@@ -12,8 +12,8 @@
     <% filesScript.forEach(function (file) { %><script type="text/javascript" src="<%= file %>"></script>
     <% }); %>
   </head>
-  <body>
-
+  <body ng-controller="RootCtrl">
+    <div ui-view></div>
   </body>
 
 </html>

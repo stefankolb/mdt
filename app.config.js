@@ -58,7 +58,8 @@ module.exports = {
   files_external: {
 
     scripts: [
-
+      'bower_components/angularjs/angular.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
     ],
 
     scripts_min: [
@@ -72,7 +73,7 @@ module.exports = {
     sass: {
 
       importPaths: [
-
+        'bower_components/bootstrap-sass/assets/stylesheets'
       ]
 
     }

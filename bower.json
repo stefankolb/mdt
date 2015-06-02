@@ -5,7 +5,9 @@
     "Stefan Kolb <dev@stefankolb.de>"
   ],
   "dependencies": {
-
+    "angularjs": "1.4.0",
+    "angular-ui-router": "0.2.15",
+    "bootstrap-sass": "3.3.4"
   },
   "license": "MIT"
 }
