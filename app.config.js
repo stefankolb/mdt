@@ -23,6 +23,9 @@ module.exports = {
     // The directory where the application is build for deployment
     deploy: 'build/deploy',
     
+    // The directory where to generated source code documentation is stored
+    docs: 'docs',
+    
     // The directory used for temporary storing of build files
     temp: 'build/temp'
 

@@ -15,3 +15,6 @@ bower_components
 
 # Ignore build, compile and deploy directories
 /build
+
+# Ignore documentation directories
+/docs

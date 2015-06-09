@@ -32,6 +32,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-docular');
   grunt.loadNpmTasks('grunt-html2js');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-postcss');
@@ -237,6 +238,36 @@ module.exports = function(grunt) {
         ]
       }
 
+    },
+    
+    
+    // -------------------------------------------------------------------------
+    // CODE DOCUMENTATION
+    // -------------------------------------------------------------------------
+    
+    docular: {
+      
+      useHtml5Mode: false,
+      baseUrl: '/mdt_docs/',
+      docular_webapp_target: '<%= dir.docs %>',
+      showAngularDocs: false,
+      showDocularDocs: false,
+      examples: { },
+      groups: [
+        {
+          groupTitle: 'Mobile Development Toolkit',
+          groupId: 'mdt',
+          groupIcon: 'icon-book',
+          sections: [
+            {
+              id: "api",
+              title:"API",
+              scripts: "<%= files_internal.scripts %>"
+            }
+          ]
+        }
+      ]
+      
     },
     
     
@@ -475,6 +506,10 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('deploy', [ ]);
+  
+  grunt.registerTask('docs', [
+    'docular'
+  ]);
 
   grunt.registerTask('default', [ ]);
 
