@@ -2,6 +2,7 @@
 <html ng-app="mdt">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>MobileDevelopmentTools</title>
 
@@ -13,6 +14,14 @@
     <% }); %>
   </head>
   <body ng-controller="RootCtrl">
+    <nav class="navbar navbar-inverse navbar-static-top">
+  	  <div class="container-fluid">
+  	    <div class="navbar-header">
+  				<a class="navbar-brand" ui-sref="/" href="#">Mobile Development Tools (MDT)</a>
+  	    </div>
+  	  </div>
+  	</nav>
+    
     <div ui-view></div>
   </body>
 

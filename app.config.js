@@ -69,11 +69,12 @@ module.exports = {
 
     scripts: [
       'bower_components/angularjs/angular.js',
-      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js'
     ],
 
     scripts_min: [
-
+      'bower_components/angularjs/angular.min.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.min.js'
     ],
 
     assets: [
