@@ -39,7 +39,9 @@ module.exports = {
   files_internal: {
 
     scripts: [
-      'src/scripts/app.js'
+      'src/scripts/app.js',
+      'src/scripts/services/convert.js',
+      'src/scripts/controllers/calcppi.js'
     ],
 
     assets: [

@@ -37,6 +37,10 @@ app.config([ '$stateProvider', '$locationProvider', '$urlRouterProvider',
       url: '/',
       templateUrl: 'partials/start.tpl.html'
     });
+    $stateProvider.state('calcppi', {
+      url: '/calcppi',
+      templateUrl: 'partials/calcppi.tpl.html'
+    });
   }
 ]);
 

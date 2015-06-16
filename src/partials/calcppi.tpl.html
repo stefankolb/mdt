@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<div class="container-fluid" ng-controller="CalcPPICtrl">
+	
+	<ol class="breadcrumb">
+		<li><a ui-sref="/">Start</a></li>
+		<li class="active">Calculate PPI</li>
+	</ol>
+	
+	<h1>Calculate PPI</h1>
+	
+	<p class="lead">
+		This tool lets you calculate a screen's pixels per inch (PPI) based on the
+		horizontal and vertical resolution in pixels as well as the screen's
+		diagonal size in inch.
+	</p>
+	
+	<div class="container-fluid row">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<h3>Screen Info</h3>
+			<br />
+			<form ng-submit="calc()">
+				<div class="form-group form-group-sm row">
+					<label class="col-sm-12 control-label" for="screenWidth">Horizontal Resolution (px)</label>
+					<div class="col-sm-4">
+						<input id="screenWidth" type="number" class="form-control" ng-model="resolutionHorizontal" placeholder="0" required />
+					</div>
+				</div>
+				<div class="form-group form-group-sm row">
+					<label class="col-sm-12 control-label" for="screenHeight">Vertical Resolution (px)</label>
+					<div class="col-sm-4">
+						<input id="screenHeight" type="number" class="form-control" ng-model="resolutionVertical" placeholder="0" required />
+					</div>
+				</div>
+				<div class="form-group form-group-sm row">
+					<label class="col-sm-12 control-label" for="sizeDiagonal">Diagonal Size (inch)</label>
+					<div class="col-sm-4">
+						<input id="sizeDiagonal" type="number" class="form-control" ng-model="sizeDiagonal" placeholder="0" required />
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Calculate</button>
+			</form>
+		</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<h3>Result</h3>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Info</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="(key, value) in info">
+						<td>{{ key }}</td>
+						<td>{{ value }}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+	
+</div>
