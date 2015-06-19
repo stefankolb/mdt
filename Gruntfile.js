@@ -240,6 +240,15 @@ module.exports = function(grunt) {
         tasks: [
           'karma:unit'
         ]
+      },
+      
+      compass: {
+        files: [
+          '<%= files_internal.sass.dir_base %>/**/*.scss'
+        ],
+        tasks: [
+          'compass:develop'
+        ]
       }
 
     },
