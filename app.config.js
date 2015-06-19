@@ -41,7 +41,8 @@ module.exports = {
     scripts: [
       'src/scripts/app.js',
       'src/scripts/services/convert.js',
-      'src/scripts/controllers/calcppi.js'
+      'src/scripts/controllers/calcppi.js',
+      'src/scripts/controllers/mqmindevicepixelratio.js'
     ],
 
     assets: [

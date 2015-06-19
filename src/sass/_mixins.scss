@@ -1,0 +1,48 @@
+/**
+ * =============================================================================
+ * MobileDevelopmentTools
+ *
+ * (c) Copyright 2015 Stefan Kolb <dev@stefankolb.de>
+ * =============================================================================
+ */
+
+@mixin min-device-pixel-ratio($dpr, $class-prefix, $browser-prefix: '') {
+  $mq: ();
+  $dpr-class-name: ();
+  
+  // First, generate class name
+  @if $browser-prefix == 'webkit' {
+    $dpr-class-name: #{str-replace($dpr, '.', '')};
+  } @else if $browser-prefix == 'o' {
+    $index: str-index($dpr, '/');
+    $first: str-slice($dpr, 0, $index - 1);
+    $second: str-slice($dpr, $index + 1);
+    $dpr-class-name: number($first) / number($second) + '';
+    
+    @if str-length($dpr-class-name) == 1 {
+      $dpr-class-name: $dpr-class-name + '0';
+    }
+    
+    $dpr-class-name: #{str-replace($dpr-class-name, '.', '')};
+  } @else {
+    $dpr-class-name: '';
+  }
+  
+  // Second, generate the media query
+  @if $browser-prefix == 'webkit' {
+    $mq: '-webkit-min-device-pixel-ratio: #{$dpr}';
+  } @else if $browser-prefix == 'o' {
+    $mq: '-o-min-device-pixel-ratio: #{$dpr}';
+  } @else if $browser-prefix == 'moz' {
+    $mq: 'min--moz-device-pixel-ratio: #{$dpr}';
+  } @else {
+    $mq: 'min-device-pixel-ratio: #{dpr}';
+  }
+  
+  // Finally, add media query to test min-device-pixel-ratio
+  @media screen and (#{$mq}) {
+    .#{$class-prefix}-#{$browser-prefix}-#{$dpr-class-name} {
+      display: block;
+    }
+  }
+}
