@@ -46,3 +46,12 @@
     }
   }
 }
+
+
+@mixin resolution($value, $unit, $class-name) {
+  @media screen and (min-resolution: #{$value}#{$unit}) {
+    .#{$class-name}-#{$unit}-#{$value} {
+      display: block;
+    }
+  }
+}

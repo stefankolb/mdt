@@ -43,7 +43,8 @@ module.exports = {
       'src/scripts/services/convert.js',
       'src/scripts/controllers/calcppi.js',
       'src/scripts/controllers/mqmindevicepixelratio.js',
-      'src/scripts/controllers/mqorientation.js'
+      'src/scripts/controllers/mqorientation.js',
+      'src/scripts/controllers/mqresolution.js'
     ],
 
     assets: [

@@ -126,6 +126,7 @@
 // -----------------------------------------------------------------------------
 // TOOL: MEDIA QUERY - ORIENTATION
 // -----------------------------------------------------------------------------
+
 .tool-mq-orientation-container {
   height: 5rem;
   position: relative;
@@ -150,4 +151,33 @@
     }
   }
   
+}
+
+
+// -----------------------------------------------------------------------------
+// TOOL: MEDIA QUERY - RESOLUTION
+// -----------------------------------------------------------------------------
+
+.tool-mq-resolution-container {
+  height: 5rem;
+  position: relative;
+  
+  button {
+    display: none;
+    position: absolute;
+    
+    &.mq-resolution-default {
+      display: block;
+    }
+    
+    &.btn-block + .btn-block {
+      margin-top: 0;  // Override margin form bootstrap
+    }
+  }
+  
+  @each $mq-resolution-unit in dpi, dpcm, dppx {
+    @for $i from 72 through 300 {
+      @include resolution($i, $mq-resolution-unit, 'mq-resolution');
+    }
+  }
 }

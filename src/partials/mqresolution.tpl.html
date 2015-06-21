@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<div class="container-fluid" ng-controller="MQResolutionCtrl">
+	
+	<ol class="breadcrumb">
+		<li><a ui-sref="/">Start</a></li>
+		<li class="active">Media Query - resolution</li>
+	</ol>
+	
+	<h1>Media Query - resolution</h1>
+	
+	<p class="lead">
+		This tools helps you see to which resolution media query the device 
+		reacts to.
+	</p>
+	
+	<div class="container-fluid">
+		<div class="panel panel-default">
+			<div class="panel-heading">resolution (using dpi)</div>
+			<div class="panel-body">
+				<div class="tool-mq-resolution-container">
+					<button class="btn btn-lg btn-block btn-danger mq-resolution-default">not supported</button>
+					<button ng-repeat="resolution in resolutions"
+					        class="btn btn-lg btn-block btn-primary mq-resolution mq-resolution-dpi-{{ resolution }}">
+									{{ resolution }}dpi
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">resolution (using dpcm)</div>
+			<div class="panel-body">
+				<div class="tool-mq-resolution-container">
+					<button class="btn btn-lg btn-block btn-danger mq-resolution-default">not supported</button>
+					<button ng-repeat="resolution in resolutions"
+									class="btn btn-lg btn-block btn-primary mq-resolution mq-resolution-dpcm-{{ resolution }}">
+									{{ resolution }}dpcm
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">resolution (using dppx)</div>
+			<div class="panel-body">
+				<div class="tool-mq-resolution-container">
+					<button class="btn btn-lg btn-block btn-danger mq-resolution-default">not supported</button>
+					<button ng-repeat="resolution in resolutions"
+									class="btn btn-lg btn-block btn-primary mq-resolution mq-resolution-dppx-{{ resolution }}">
+									{{ resolution }}dppx
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
