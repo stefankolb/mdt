@@ -41,6 +41,10 @@ app.config([ '$stateProvider', '$locationProvider', '$urlRouterProvider',
       url: '/mqmindevicepixelratio',
       templateUrl: 'partials/mqmindevicepixelratio.tpl.html'
     });
+    $stateProvider.state('mqorientation', {
+      url: '/mqorientation',
+      templateUrl: 'partials/mqorientation.tpl.html'
+    });
     $stateProvider.state('calcppi', {
       url: '/calcppi',
       templateUrl: 'partials/calcppi.tpl.html'

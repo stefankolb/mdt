@@ -121,3 +121,33 @@
   @include min-device-pixel-ratio('3.0', 'mq-dpw', 'moz');
   
 }
+
+
+// -----------------------------------------------------------------------------
+// TOOL: MEDIA QUERY - ORIENTATION
+// -----------------------------------------------------------------------------
+.tool-mq-orientation-container {
+  height: 5rem;
+  position: relative;
+  
+  button {
+    display: none;
+    position: absolute;
+    
+    &.btn-block + .btn-block {
+      margin-top: 0;  // Override margin form bootstrap
+    }
+  }
+  
+  @media screen and (orientation: portrait) {
+    .mq-orientation-portrait {
+      display: block;
+    }
+  }
+  @media screen and (orientation: landscape) {
+    .mq-orientation-landscape {
+      display: block;
+    }
+  }
+  
+}
