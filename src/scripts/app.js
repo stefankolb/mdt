@@ -37,17 +37,17 @@ app.config([ '$stateProvider', '$locationProvider', '$urlRouterProvider',
       url: '/',
       templateUrl: 'partials/start.tpl.html'
     });
-    $stateProvider.state('mqmindevicepixelratio', {
-      url: '/mqmindevicepixelratio',
-      templateUrl: 'partials/mqmindevicepixelratio.tpl.html'
+    $stateProvider.state('mfdevicepixelratio', {
+      url: '/mfdevicepixelratio',
+      templateUrl: 'partials/mfdevicepixelratio.tpl.html'
     });
-    $stateProvider.state('mqorientation', {
-      url: '/mqorientation',
-      templateUrl: 'partials/mqorientation.tpl.html'
+    $stateProvider.state('mforientation', {
+      url: '/mforientation',
+      templateUrl: 'partials/mforientation.tpl.html'
     });
-    $stateProvider.state('mqresolution', {
-      url: '/mqresolution',
-      templateUrl: 'partials/mqresolution.tpl.html'
+    $stateProvider.state('mfresolution', {
+      url: '/mfresolution',
+      templateUrl: 'partials/mfresolution.tpl.html'
     });
     $stateProvider.state('calcppi', {
       url: '/calcppi',

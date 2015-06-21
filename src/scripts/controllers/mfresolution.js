@@ -10,14 +10,14 @@
 
 /**
  * @ngdoc controller
- * @name mdt.controller:MQResolutionCtrl
+ * @name mdt.controller:MFResolutionCtrl
  * @description
  *
- * Controller for identifying resolution media queries.
+ * Controller for the `resolution` media feature.
  *
  * @requires $scope
  */
-angular.module('mdt').controller('MQResolutionCtrl', [ '$scope',
+angular.module('mdt').controller('MFResolutionCtrl', [ '$scope',
   function($scope) {
 
     /**
@@ -36,7 +36,7 @@ angular.module('mdt').controller('MQResolutionCtrl', [ '$scope',
     /**
      * @ngdoc property
      * @name resolutions
-     * @propertyOf mdt.controller:MQResolutionCtrl
+     * @propertyOf mdt.controller:MFResolutionCtrl
      * @returns {Array} List of all resolutions that should be checked
      */
     $scope.resolutions = [];

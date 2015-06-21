@@ -10,14 +10,14 @@
 
 /**
  * @ngdoc controller
- * @name mdt.controller:MQOrientationCtrl
+ * @name mdt.controller:MFDevicePixelRatioCtrl
  * @description
  *
- * Controller for identifying orientation media queries.
+ * Controller for the `device-pixel-ratio` media feature.
  *
  * @requires $scope
  */
-angular.module('mdt').controller('MQOrientationCtrl', [ 
+angular.module('mdt').controller('MFDevicePixelRatioCtrl', [ 
   function() {
 		
 		/**

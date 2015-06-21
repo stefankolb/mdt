@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<div class="container-fluid" ng-controller="MFResolutionCtrl">
+	
+	<ol class="breadcrumb">
+		<li><a ui-sref="/">Start</a></li>
+		<li class="active">Media Feature - resolution</li>
+	</ol>
+	
+	<h1>Media Feature - resolution</h1>
+	
+	<p class="lead">
+		This tool helps you to see whether or not the device supports the
+		<code>resolution</code> media feature.
+	</p>
+	
+	<div class="container-fluid">
+		<div class="panel panel-default">
+			<div class="panel-heading"><code>resolution</code> (dpi)</div>
+			<div class="panel-body">
+				<div class="tool-mf-resolution-container">
+					<button class="btn btn-lg btn-block btn-danger mf-resolution-default">not supported</button>
+					<button ng-repeat="resolution in resolutions"
+					        class="btn btn-lg btn-block btn-primary mf-resolution mf-resolution-dpi-{{ resolution }}">
+									{{ resolution }}dpi
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading"><code>resolution</code> (dpcm)</div>
+			<div class="panel-body">
+				<div class="tool-mf-resolution-container">
+					<button class="btn btn-lg btn-block btn-danger mf-resolution-default">not supported</button>
+					<button ng-repeat="resolution in resolutions"
+									class="btn btn-lg btn-block btn-primary mf-resolution mf-resolution-dpcm-{{ resolution }}">
+									{{ resolution }}dpcm
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading"><code>resolution</code> (dppx)</div>
+			<div class="panel-body">
+				<div class="tool-mf-resolution-container">
+					<button class="btn btn-lg btn-block btn-danger mf-resolution-default">not supported</button>
+					<button ng-repeat="resolution in resolutions"
+									class="btn btn-lg btn-block btn-primary mf-resolution mf-resolution-dppx-{{ resolution }}">
+									{{ resolution }}dppx
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

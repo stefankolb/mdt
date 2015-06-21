@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<div class="container-fluid" ng-controller="MFDevicePixelRatioCtrl">
+	
+	<ol class="breadcrumb">
+		<li><a ui-sref="/">Start</a></li>
+		<li class="active">Media Feature - device-pixel-ratio</li>
+	</ol>
+	
+	<h1>Media Feature - device-pixel-ratio</h1>
+	
+	<p class="lead">
+		This tools helps you see whether or not the device supports the 
+		<code>device-pixel-ratio</code> media feature.
+	</p>
+	
+	<div class="container-fluid">
+		<div class="panel panel-default">
+			<div class="panel-heading"><code>device-pixel-ratio</code></div>
+			<div class="panel-body">
+				<div class="tool-mf-dpr-container">
+					<button class="btn btn-lg btn-block btn-danger mf-dpr-default">not supported</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-10">1.0</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-11">1.1</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-12">1.2</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-13">1.3</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-14">1.4</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-15">1.5</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-16">1.6</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-17">1.7</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-18">1.8</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-19">1.9</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-20">2.0</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-21">2.1</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-22">2.2</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-23">2.3</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-24">2.4</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-25">2.5</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-26">2.6</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-27">2.7</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-28">2.8</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-29">2.9</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-30">3.0</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Prefixed for WebKit (<code>-webkit-min-device-pixel-ratio</code>)</div>
+			<div class="panel-body">
+				<div class="tool-mf-dpr-container">
+					<button class="btn btn-lg btn-block btn-danger mf-dpr-default">not supported</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-10">1.0</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-11">1.1</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-12">1.2</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-13">1.3</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-14">1.4</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-15">1.5</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-16">1.6</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-17">1.7</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-18">1.8</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-19">1.9</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-20">2.0</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-21">2.1</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-22">2.2</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-23">2.3</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-24">2.4</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-25">2.5</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-26">2.6</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-27">2.7</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-28">2.8</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-29">2.9</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-webkit-30">3.0</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Prefixed for Opera (<code>-o-min-device-pixel-ratio</code>)</div>
+			<div class="panel-body">
+				<div class="tool-mf-dpr-container">
+					<button class="btn btn-lg btn-block btn-danger mf-dpr-default">not supported</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-10">1.0</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-11">1.1</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-12">1.2</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-13">1.3</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-14">1.4</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-15">1.5</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-16">1.6</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-17">1.7</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-18">1.8</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-19">1.9</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-20">2.0</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-21">2.1</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-22">2.2</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-23">2.3</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-24">2.4</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-25">2.5</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-26">2.6</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-27">2.7</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-28">2.8</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-29">2.9</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-o-30">3.0</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Prefixed for Mozilla (<code>min--moz-device-pixel-ratio</code>)</div>
+			<div class="panel-body">
+				<div class="tool-mf-dpr-container">
+					<button class="btn btn-lg btn-block btn-danger mf-dpr-default">not supported</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-10">1.0</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-11">1.1</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-12">1.2</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-13">1.3</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-14">1.4</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-15">1.5</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-16">1.6</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-17">1.7</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-18">1.8</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-19">1.9</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-20">2.0</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-21">2.1</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-22">2.2</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-23">2.3</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-24">2.4</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-25">2.5</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-26">2.6</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-27">2.7</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-28">2.8</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-29">2.9</button>
+					<button class="btn btn-lg btn-block btn-primary mf-dpr mf-dpr-moz-30">3.0</button>
+			</div>
+		</div>
+	</div>
+	
+</div>

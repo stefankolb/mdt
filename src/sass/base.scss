@@ -15,7 +15,7 @@
 // TOOL: MEDIA QUERY - DEVICE PIXEL RATIO
 // -----------------------------------------------------------------------------
 
-.tool-mq-dpr-container {
+.tool-mf-dpr-container {
   height: 5rem;
   position: relative;
   
@@ -23,7 +23,7 @@
     display: none;
     position: absolute;
     
-    &.mq-dpr-default {
+    &.mf-dpr-default {
       display: block;
     }
     
@@ -32,93 +32,93 @@
     }
   }
   
-  @include min-device-pixel-ratio('1.0', 'mq-dpr');
-  @include min-device-pixel-ratio('1.1', 'mq-dpr');
-  @include min-device-pixel-ratio('1.2', 'mq-dpr');
-  @include min-device-pixel-ratio('1.3', 'mq-dpr');
-  @include min-device-pixel-ratio('1.4', 'mq-dpr');
-  @include min-device-pixel-ratio('1.5', 'mq-dpr');
-  @include min-device-pixel-ratio('1.6', 'mq-dpr');
-  @include min-device-pixel-ratio('1.7', 'mq-dpr');
-  @include min-device-pixel-ratio('1.8', 'mq-dpr');
-  @include min-device-pixel-ratio('1.9', 'mq-dpr');
-  @include min-device-pixel-ratio('2.0', 'mq-dpr');
-  @include min-device-pixel-ratio('2.1', 'mq-dpr');
-  @include min-device-pixel-ratio('2.2', 'mq-dpr');
-  @include min-device-pixel-ratio('2.3', 'mq-dpr');
-  @include min-device-pixel-ratio('2.4', 'mq-dpr');
-  @include min-device-pixel-ratio('2.5', 'mq-dpr');
-  @include min-device-pixel-ratio('2.6', 'mq-dpr');
-  @include min-device-pixel-ratio('2.7', 'mq-dpr');
-  @include min-device-pixel-ratio('2.8', 'mq-dpr');
-  @include min-device-pixel-ratio('2.9', 'mq-dpr');
-  @include min-device-pixel-ratio('3.0', 'mq-dpr');
+  @include min-device-pixel-ratio('1.0', 'mf-dpr');
+  @include min-device-pixel-ratio('1.1', 'mf-dpr');
+  @include min-device-pixel-ratio('1.2', 'mf-dpr');
+  @include min-device-pixel-ratio('1.3', 'mf-dpr');
+  @include min-device-pixel-ratio('1.4', 'mf-dpr');
+  @include min-device-pixel-ratio('1.5', 'mf-dpr');
+  @include min-device-pixel-ratio('1.6', 'mf-dpr');
+  @include min-device-pixel-ratio('1.7', 'mf-dpr');
+  @include min-device-pixel-ratio('1.8', 'mf-dpr');
+  @include min-device-pixel-ratio('1.9', 'mf-dpr');
+  @include min-device-pixel-ratio('2.0', 'mf-dpr');
+  @include min-device-pixel-ratio('2.1', 'mf-dpr');
+  @include min-device-pixel-ratio('2.2', 'mf-dpr');
+  @include min-device-pixel-ratio('2.3', 'mf-dpr');
+  @include min-device-pixel-ratio('2.4', 'mf-dpr');
+  @include min-device-pixel-ratio('2.5', 'mf-dpr');
+  @include min-device-pixel-ratio('2.6', 'mf-dpr');
+  @include min-device-pixel-ratio('2.7', 'mf-dpr');
+  @include min-device-pixel-ratio('2.8', 'mf-dpr');
+  @include min-device-pixel-ratio('2.9', 'mf-dpr');
+  @include min-device-pixel-ratio('3.0', 'mf-dpr');
   
-  @include min-device-pixel-ratio('1.0', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.1', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.2', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.3', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.4', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.5', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.6', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.7', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.8', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('1.9', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.0', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.1', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.2', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.3', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.4', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.5', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.6', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.7', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.8', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('2.9', 'mq-dpr', 'webkit');
-  @include min-device-pixel-ratio('3.0', 'mq-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.0', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.1', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.2', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.3', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.4', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.5', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.6', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.7', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.8', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('1.9', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.0', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.1', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.2', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.3', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.4', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.5', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.6', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.7', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.8', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('2.9', 'mf-dpr', 'webkit');
+  @include min-device-pixel-ratio('3.0', 'mf-dpr', 'webkit');
   
-  @include min-device-pixel-ratio('10/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('11/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('12/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('13/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('14/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('15/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('16/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('17/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('18/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('19/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('20/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('21/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('22/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('23/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('24/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('25/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('26/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('27/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('28/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('29/10', 'mq-dpr', 'o');
-  @include min-device-pixel-ratio('30/10', 'mq-dpr', 'o');
+  @include min-device-pixel-ratio('10/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('11/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('12/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('13/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('14/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('15/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('16/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('17/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('18/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('19/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('20/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('21/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('22/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('23/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('24/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('25/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('26/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('27/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('28/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('29/10', 'mf-dpr', 'o');
+  @include min-device-pixel-ratio('30/10', 'mf-dpr', 'o');
   
-  @include min-device-pixel-ratio('1.0', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.1', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.2', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.3', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.4', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.5', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.6', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.7', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.8', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('1.9', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.0', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.1', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.2', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.3', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.4', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.5', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.6', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.7', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.8', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('2.9', 'mq-dpw', 'moz');
-  @include min-device-pixel-ratio('3.0', 'mq-dpw', 'moz');
+  @include min-device-pixel-ratio('1.0', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.1', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.2', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.3', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.4', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.5', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.6', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.7', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.8', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('1.9', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.0', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.1', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.2', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.3', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.4', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.5', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.6', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.7', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.8', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('2.9', 'mf-dpr', 'moz');
+  @include min-device-pixel-ratio('3.0', 'mf-dpr', 'moz');
   
 }
 
@@ -127,7 +127,7 @@
 // TOOL: MEDIA QUERY - ORIENTATION
 // -----------------------------------------------------------------------------
 
-.tool-mq-orientation-container {
+.tool-mf-orientation-container {
   height: 5rem;
   position: relative;
   
@@ -141,12 +141,12 @@
   }
   
   @media screen and (orientation: portrait) {
-    .mq-orientation-portrait {
+    .mf-orientation-portrait {
       display: block;
     }
   }
   @media screen and (orientation: landscape) {
-    .mq-orientation-landscape {
+    .mf-orientation-landscape {
       display: block;
     }
   }
@@ -158,7 +158,7 @@
 // TOOL: MEDIA QUERY - RESOLUTION
 // -----------------------------------------------------------------------------
 
-.tool-mq-resolution-container {
+.tool-mf-resolution-container {
   height: 5rem;
   position: relative;
   
@@ -166,7 +166,7 @@
     display: none;
     position: absolute;
     
-    &.mq-resolution-default {
+    &.mf-resolution-default {
       display: block;
     }
     
@@ -175,9 +175,9 @@
     }
   }
   
-  @each $mq-resolution-unit in dpi, dpcm, dppx {
+  @each $mf-resolution-unit in dpi, dpcm, dppx {
     @for $i from 72 through 300 {
-      @include resolution($i, $mq-resolution-unit, 'mq-resolution');
+      @include resolution($i, $mf-resolution-unit, 'mf-resolution');
     }
   }
 }
