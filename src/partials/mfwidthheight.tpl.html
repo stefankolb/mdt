@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<div class="container-fluid" ng-controller="MFWidthHeightCtrl">
+	
+	<ol class="breadcrumb">
+		<li><a ui-sref="/">Start</a></li>
+		<li class="active">Media Feature - (device-)width/height</li>
+	</ol>
+	
+	<h1>Media Feature - (device-)width/height</h1>
+	
+	<p class="lead">
+		This tool helps you to see whether or not the device supports the
+		<code>(device-)width/height</code> media feature.
+	</p>
+	
+	<h2>Custom</h2>
+	<p>
+		If you want to test for a specific width/height, enter horizontal and 
+		vertical resolution in pixels and watch the results.
+	</p>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-sm-12 form-group form-group-sm row">
+				<label class="control-label" for="custom-width">width (incl. unit, e.g. 320px)</label>
+				<div>
+					<input id="custom-width" class="form-control" ng-model="customResolutionHorizontal" placeholder="0x" required />
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-sm-12  form-group form-group-sm row">
+				<label class="control-label" for="custom-height">height (incl. unit, e.g. 480px)</label>
+				<div>
+					<input id="custom-height" class="form-control" ng-model="customResolutionVertical" placeholder="0x" required />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tool-mf-widthheight-container">
+		<button class="btn btn-lg btn-block btn-danger mf-widthheight-default">Nope!</button>
+		<button class="btn btn-lg btn-block btn-primary mf-widthheight-custom">Yes!</button>
+	</div>
+	<br />
+	<p>
+		If you want to test for a specific device-width/-height, enter horizontal and 
+		vertical resolution in pixels and watch the results.
+	</p>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-sm-12 form-group form-group-sm row">
+				<label class="control-label" for="custom-device-width">device-width (incl. unit, e.g. 320px)</label>
+				<div>
+					<input id="custom-device-width" class="form-control" ng-model="customDeviceResolutionHorizontal" placeholder="0x" required />
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-sm-12  form-group form-group-sm row">
+				<label class="control-label" for="custom-device-height">device-height (incl. unit, e.g. 480px)</label>
+				<div>
+					<input id="custom-device-height" class="form-control" ng-model="customDeviceResolutionVertical" placeholder="0x" required />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tool-mf-widthheight-container">
+		<button class="btn btn-lg btn-block btn-danger mf-widthheight-default">Nope!</button>
+		<button class="btn btn-lg btn-block btn-primary mf-widthheight-device-custom">Yes!</button>
+	</div>
+	
+	
+	<h2>Defaults</h2>
+	<p>
+		Default breakpoints for <code>(device-)width</code> are: 
+		320px, 480px, 768px, 1024px, 1200px and 1600px.<br />
+		Default breakpoints for <code>(device-)height</code> are: 
+		320px, 480px, 720px, 960px, 1080px, 1200px and 1440px.
+	</p>
+	<div class="container-fluid row">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading"><code>width</code></div>
+				<div class="panel-body">
+					<div class="tool-mf-widthheight-container">
+						<button class="btn btn-lg btn-block btn-danger mf-widthheight-default">not supported</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-w0">narrower than 320px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-w320">between 320px and 480px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-w480">between 480px and 768px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-w768">between 768px and 1024px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-w1024">between 1024px and 1200px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-w1200">between 1200px and 1600px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-w1600">wider than 1600px</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">	
+			<div class="panel panel-default">
+				<div class="panel-heading"><code>device-width</code></div>
+				<div class="panel-body">
+					<div class="tool-mf-widthheight-container">
+						<button class="btn btn-lg btn-block btn-danger mf-widthheight-default">not supported</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dw0">narrower than 320px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dw320">between 320px and 480px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dw480">between 480px and 768px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dw768">between 768px and 1024px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dw1024">between 1024px and 1200px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dw1200">between 1200px and 1600px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dw1600">wider than 1600px</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading"><code>height</code></div>
+				<div class="panel-body">
+					<div class="tool-mf-widthheight-container">
+						<button class="btn btn-lg btn-block btn-danger mf-widthheight-default">not supported</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-h0">smaller than 320px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-h320">between 320px and 480px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-h480">between 480px and 720px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-h720">between 720px and 960px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-h960">between 960px and 1080px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-h1080">between 1080px and 1200px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-h1200">between 1200px and 1440px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-h1440">larger than 1440px</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-heading"><code>device-height</code></div>
+				<div class="panel-body">
+					<div class="tool-mf-widthheight-container">
+						<button class="btn btn-lg btn-block btn-danger mf-widthheight-default">not supported</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dh0">smaller than 320px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dh320">between 320px and 480px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dh480">between 480px and 720px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dh720">between 720px and 960px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dh960">between 960px and 1080px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dh1080">between 1080px and 1200px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dh1200">between 1200px and 1440px</button>
+						<button class="btn btn-lg btn-block btn-primary mf-widthheight-dh1440">larger than 1440px</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<style type="text/css" parse-style>
+		@media screen and (width: {{ customResolutionHorizontal }}) and (height: {{ customResolutionVertical }}) { 
+			.tool-mf-widthheight-container button.mf-widthheight-custom {
+				display: block; 
+			}
+		}
+		@media screen and (device-width: {{ customDeviceResolutionHorizontal }}) and (device-height: {{ customDeviceResolutionVertical }}) { 
+			.tool-mf-widthheight-container button.mf-widthheight-device-custom {
+				display: block; 
+			}
+		}
+	</style>
+
+</div>

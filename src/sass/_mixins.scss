@@ -55,3 +55,29 @@
     }
   }
 }
+
+
+@mixin mf-widthheight($min, $max, $type, $class-name) {
+  $mq: 'screen and (min-#{$type}: #{$min})';
+  @if $max != 0 {
+    $mq: '#{$mq} and (max-#{$type}: #{$max})';
+  }
+  
+  // Compose class name
+  $first-char: ();
+  $unitless: str-replace($min + '', unit($min), '');
+  @if str-index($type, 'device-') != null {
+    $first-char: 'd' + str-slice($type, 8, 8);
+  } @else {
+    $first-char: str-slice($type, 1, 1);
+  }
+  
+  $class-name: '#{$class-name}-#{$first-char}#{$unitless}';
+  
+  @media #{$mq} {
+    .#{$class-name} {
+      display: block;
+    }
+  }
+   
+}

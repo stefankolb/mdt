@@ -49,6 +49,10 @@ app.config([ '$stateProvider', '$locationProvider', '$urlRouterProvider',
       url: '/mfresolution',
       templateUrl: 'partials/mfresolution.tpl.html'
     });
+    $stateProvider.state('mfwidthheight', {
+      url: '/mfwidthheight',
+      templateUrl: 'partials/mfwidthheight.tpl.html'
+    });
     $stateProvider.state('calcppi', {
       url: '/calcppi',
       templateUrl: 'partials/calcppi.tpl.html'
@@ -61,3 +65,15 @@ app.controller('RootCtrl', [
     
   }
 ]);
+
+// http://stackoverflow.com/a/18249428/3917816
+app.directive('parseStyle', function($interpolate) {
+    return function(scope, elem) {
+        var exp = $interpolate(elem.html()),
+            watchFunc = function () { return exp(scope); };
+
+        scope.$watch(watchFunc, function (html) {
+            elem.html(html);
+        });
+    };
+});

@@ -44,7 +44,8 @@ module.exports = {
       'src/scripts/controllers/calcppi.js',
       'src/scripts/controllers/mfdevicepixelratio.js',
       'src/scripts/controllers/mforientation.js',
-      'src/scripts/controllers/mfresolution.js'
+      'src/scripts/controllers/mfresolution.js',
+      'src/scripts/controllers/mfwidthheight.js'
     ],
 
     assets: [

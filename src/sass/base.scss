@@ -181,3 +181,61 @@
     }
   }
 }
+
+
+// -----------------------------------------------------------------------------
+// TOOL: MEDIA FEATURE - (DEVICE-)WIDTH/HEIGHT
+// -----------------------------------------------------------------------------
+
+.tool-mf-widthheight-container {
+  height: 5rem;
+  position: relative;
+  
+  button {
+    display: none;
+    position: absolute;
+    
+    &.mf-widthheight-default {
+      display: block;
+    }
+    
+    &.btn-block + .btn-block {
+      margin-top: 0;  // Override margin form bootstrap
+    }
+  }
+  
+  @include mf-widthheight(0px, 320px, 'width', 'mf-widthheight');
+  @include mf-widthheight(320px, 480px, 'width', 'mf-widthheight');
+  @include mf-widthheight(480px, 768px, 'width', 'mf-widthheight');
+  @include mf-widthheight(768px, 1024px, 'width', 'mf-widthheight');
+  @include mf-widthheight(1024px, 1200px, 'width', 'mf-widthheight');
+  @include mf-widthheight(1200px, 1600px, 'width', 'mf-widthheight');
+  @include mf-widthheight(1600px, 0, 'width', 'mf-widthheight');
+  
+  @include mf-widthheight(0px, 320px, 'device-width', 'mf-widthheight');
+  @include mf-widthheight(320px, 480px, 'device-width', 'mf-widthheight');
+  @include mf-widthheight(480px, 768px, 'device-width', 'mf-widthheight');
+  @include mf-widthheight(768px, 1024px, 'device-width', 'mf-widthheight');
+  @include mf-widthheight(1024px, 1200px, 'device-width', 'mf-widthheight');
+  @include mf-widthheight(1200px, 1600px, 'device-width', 'mf-widthheight');
+  @include mf-widthheight(1600px, 0, 'device-width', 'mf-widthheight');
+  
+  @include mf-widthheight(0px, 320px, 'height', 'mf-widthheight');
+  @include mf-widthheight(320px, 480px, 'height', 'mf-widthheight');
+  @include mf-widthheight(480px, 720px, 'height', 'mf-widthheight');
+  @include mf-widthheight(720px, 960px, 'height', 'mf-widthheight');
+  @include mf-widthheight(960px, 1080px, 'height', 'mf-widthheight');
+  @include mf-widthheight(1080px, 1200px, 'height', 'mf-widthheight');
+  @include mf-widthheight(1200px, 1440px, 'height', 'mf-widthheight');
+  @include mf-widthheight(1440px, 0, 'height', 'mf-widthheight');
+  
+  @include mf-widthheight(0px, 320px, 'device-height', 'mf-widthheight');
+  @include mf-widthheight(320px, 480px, 'device-height', 'mf-widthheight');
+  @include mf-widthheight(480px, 720px, 'device-height', 'mf-widthheight');
+  @include mf-widthheight(720px, 960px, 'device-height', 'mf-widthheight');
+  @include mf-widthheight(960px, 1080px, 'device-height', 'mf-widthheight');
+  @include mf-widthheight(1080px, 1200px, 'device-height', 'mf-widthheight');
+  @include mf-widthheight(1200px, 1440px, 'device-height', 'mf-widthheight');
+  @include mf-widthheight(1440px, 0, 'device-height', 'mf-widthheight');
+  
+}
