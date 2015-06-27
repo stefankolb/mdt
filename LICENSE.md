@@ -1,13 +1,4 @@
-# Mobile Development Toolkit (MDT)
-
-The mobile development toolkit consists of a series of tools to aid development
-of web sites and web applications for mobile devices.
-
-Go to https://stefankolb.github.io/mdt to see it in action.
-
----
-
-### MIT License
+# MIT License
 
 Copyright (c) 2015 Stefan Kolb <dev@stefankolb.de>
 

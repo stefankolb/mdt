@@ -1,11 +1,9 @@
 /**
  * =============================================================================
- * MobileDevelopmentTools
+ * MobileDevelopmentToolkit
  *
  * (c) Copyright 2015 Stefan Kolb <dev@stefankolb.de>
  * =============================================================================
  */
 
- 'use strict';
-
- 
+'use strict';
