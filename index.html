@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="mdt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MobileDevelopmentToolkit</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/base.css" />
+    
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="assets/scripts/angular.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/MobileDevelopmentToolkit-v0.1.0.min.js"></script>
+    
+  </head>
+  <body ng-controller="RootCtrl">
+    <nav class="navbar navbar-inverse navbar-static-top">
+  	  <div class="container-fluid">
+  	    <div class="navbar-header">
+  				<a class="navbar-brand" ui-sref="/" href="#">MobileDevelopmentToolkit (MDT)</a>
+  	    </div>
+  	  </div>
+  	</nav>
+    
+    <div ui-view></div>
+  </body>
+
+</html>
