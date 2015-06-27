@@ -29,6 +29,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -89,6 +90,10 @@ module.exports = function(grunt) {
 
       compile: [
         '<%= dir.compile %>'
+      ],
+      
+      deploy: [
+        '<%= dir.deploy %>'
       ],
       
       docs: [
@@ -251,6 +256,23 @@ module.exports = function(grunt) {
         ]
       }
 
+    },
+    
+    
+    // -------------------------------------------------------------------------
+    // GITHUB PAGES DEPLOYMENT
+    // -------------------------------------------------------------------------
+    
+    'gh-pages': {
+      options: {
+        base: '<%= dir.deploy %>',
+        message: '[gh-pages] Deployment of version ' + _appVersion,
+        user: {
+          name: 'Stefan Kolb',
+          email: 'dev@stefankolb.de'
+        }
+      },
+      src: '**/*'
     },
     
     
@@ -510,7 +532,12 @@ module.exports = function(grunt) {
     'clean:temp'
   ]);
 
-  grunt.registerTask('deploy', [ ]);
+  grunt.registerTask('deploy', [ 
+    'compile',
+    'clean:deploy',
+    'prepare-deploy',
+    'gh-pages'
+  ]);
   
   grunt.registerTask('docs', [
     'clean:docs',
@@ -518,6 +545,19 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('default', [ ]);
+  
+  
+  grunt.registerTask('prepare-deploy', 
+    'Prepares deployment',
+    function() {
+      grunt.file.recurse(_appConfig.dir.compile,
+        function(abspath, rootdir, subdir, filename) {
+          var dest = subdir ? subdir + '/' + filename : filename;
+          grunt.file.copy(abspath, _appConfig.dir.deploy + '/' + dest);
+        }
+      );
+    }
+  );
 
   // ---------------------------------------------------------------------------
   // MULTITASKS

@@ -7,6 +7,9 @@
 # Ignore SASS cache
 .sass-cache
 
+# Ignore .grunt directory created by some grunt tasks
+.grunt
+
 # Ignore node packages/modules
 node_modules
 
